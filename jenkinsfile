@@ -48,7 +48,7 @@ node{
         echo 'Pushing the docker image to DockerHub'
         withCredentials([string(credentialsId: 'dock-password', variable: 'dockerHubPassword')]) {
         sh "docker login -u jevina -p ${dockerhub}"
-        sh "docker push jevina/bannking2:1.0"
+        sh "docker push jevina/banking2:1.0"
             
         }
         
